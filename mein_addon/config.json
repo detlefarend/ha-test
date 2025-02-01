@@ -1,0 +1,18 @@
+{
+  "name": "Mein Test-Add-on",
+  "version": "1.0.0",
+  "slug": "mein_test_addon",
+  "description": "Ein einfaches Add-on zur Demonstration",
+  "startup": "application",
+  "boot": "auto",
+  "arch": ["amd64", "armv7", "arm64"],
+  "map": ["config", "ssl", "share"],
+  "host_network": true,
+  "options": {
+    "welcome_message": "Hallo Home Assistant!"
+  },
+  "schema": {
+    "welcome_message": "str"
+  },
+  "image": "ghcr.io/dein-benutzername/mein-addon"
+}
